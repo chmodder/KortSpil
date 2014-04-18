@@ -16,17 +16,16 @@ public partial class _Default : System.Web.UI.Page
     protected void ButtonTagKort_Click(object sender, EventArgs e)
     {
         Spil S = new Spil();
-        if (S.jegHarVundet())
-        {
-            LabelMsg.Text = "Tillykke du har vundet";
-        }
-        else
-        {
-            LabelMsg.Text = "Øv. Du har tabt!";
-        }
-        S.
+        //if (S.jegHarVundet())
+        //{
+        //    LabelMsg.Text = "Tillykke du har vundet";
+        //}
+        //else
+        //{
+        //    LabelMsg.Text = "Øv. Du har tabt!";
+        //}
+        //S.
         S.givComputerPoint();
-        S.GivSpillerPoint();
         visStilling(S);
     }
 

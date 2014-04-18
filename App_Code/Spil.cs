@@ -27,7 +27,7 @@ public class Spil
 
     // CONSTRUCTOR Metoden
     public Spil()
-    {
+	{
         // Ligger der et spil i session?
         if (HttpContext.Current.Session["Spil"] == null)
         {
@@ -43,7 +43,7 @@ public class Spil
             this._computerPoint = gammeltSpil.ComputerPoint;
             this._spillerPoint = gammeltSpil.SpillerPoint;
         }
-    }
+	}
 
     /// <summary>
     /// Giver computeren 1 point og gemmer i session.
